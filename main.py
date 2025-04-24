@@ -41,6 +41,7 @@ def main():
     ejecutar_script('application/dibuja_vara.py')
     ejecutar_script('application/dibuja_varb.py')
     ejecutar_script('application/dibuja_varc.py')
+    ejecutar_script('application/dibuja_vard.py')
 
 if __name__ == "__main__":
     main()
