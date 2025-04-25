@@ -54,11 +54,33 @@ plt.plot(x, M, 'r', linewidth=2, label='M')
 plt.plot(x, H, 'b', linewidth=2, label='H')
 plt.plot(x, VH, 'k', linewidth=2, label='VH')
 
+# Función para anotar pendiente (ahora recibe texto directamente)
+def annotate_slope(label_pos, slope_text, rotation=0):
+    plt.annotate(slope_text, xy=label_pos, textcoords="offset points",
+                 xytext=(0, 10), ha='center', fontsize=12, color='black', rotation=rotation)
+
+# Anotar pendiente de VL
+annotate_slope((-0.60, 0.8), "-2-4x")  # posición del texto + pendiente manual
+# Anotar pendiente de L
+annotate_slope((-0.85, 0.15), "4/3(x+1)", rotation=63)
+annotate_slope((-0.15, 0.8), "-4x")
+# Anotar pendiente de M
+annotate_slope((-0.23, 0.15), "4x+1", rotation=76)
+annotate_slope((0.06, 0.8), "1-4x", rotation=-78)
+# Anotar pendiente de H
+annotate_slope((0.03, 0.3), "4x")
+annotate_slope((0.35, 0.8), "4/3(1-x)", rotation=-60)
+# Anotar pendiente de VH
+annotate_slope((0.65, 0.15), "4x-2")
+
 plt.title('Funciones de Membresía de VarB')
 plt.xlabel('VarB')
 plt.ylabel('Grado de pertenencia')
-plt.legend()
+plt.legend(bbox_to_anchor=(1.05, 1), loc='upper left')
 plt.grid()
+
+# Ajustar el layout para incluir la leyenda
+plt.tight_layout(rect=[0, 0, 0.95, 1])
 
 # Crear el directorio si no existe
 output_dir = 'data/respuesta1'
