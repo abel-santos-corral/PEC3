@@ -38,12 +38,12 @@ def main():
     Función principal que ejecuta los scripts en el orden especificado.
     """
     # Ejecutar los scripts en el orden especificado
-    ejecutar_script('application/dibuja_vara.py')
-    ejecutar_script('application/dibuja_varb.py')
-    ejecutar_script('application/dibuja_varc.py')
-    ejecutar_script('application/dibuja_vard.py')
-    ejecutar_script('application/dibuja_outb1.py')
-    ejecutar_script('application/dibuja_out.py')
+    ejecutar_script('application/pregunta1/dibuja_vara.py')
+    ejecutar_script('application/pregunta1/dibuja_varb.py')
+    ejecutar_script('application/pregunta1/dibuja_varc.py')
+    ejecutar_script('application/pregunta1/dibuja_vard.py')
+    ejecutar_script('application/pregunta1/dibuja_outb1.py')
+    ejecutar_script('application/pregunta1/dibuja_out.py')
 
 if __name__ == "__main__":
     main()
