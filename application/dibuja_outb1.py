@@ -33,11 +33,27 @@ plt.plot(x, L, 'g', linewidth=2, label='L')
 plt.plot(x, M, 'r', linewidth=2, label='M')
 plt.plot(x, H, 'b', linewidth=2, label='H')
 
+# Función para anotar pendiente (ahora recibe texto directamente)
+def annotate_slope(label_pos, slope_text):
+    plt.annotate(slope_text, xy=label_pos, textcoords="offset points",
+                 xytext=(0,10), ha='center', fontsize=12, color='black')
+
+# Anotar pendiente de L
+annotate_slope((2.6, 0.75), "1,75-0,25x")
+# Anotar pendiente de M
+annotate_slope((4, 0.35), "x-4")
+annotate_slope((6, 0.35), "6-x")
+# Anotar pendiente de H
+annotate_slope((7.6, 0.75), "0,333x-1,333")
+
 plt.title('Funciones de Membresía de OutB1')
 plt.xlabel('OutB1')
 plt.ylabel('Grado de pertenencia')
-plt.legend()
+plt.legend(bbox_to_anchor=(1.05, 1), loc='upper left')
 plt.grid()
+
+# Ajustar el layout para incluir la leyenda
+plt.tight_layout(rect=[0, 0, 0.95, 1])
 
 # Crear directorio
 output_dir = 'data/respuesta1'
