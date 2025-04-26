@@ -49,6 +49,7 @@ def main():
     ejecutar_script('application/pregunta2/dibuja_activacion_vara.py')
     ejecutar_script('application/pregunta2/dibuja_activacion_varb.py')
     ejecutar_script('application/pregunta2/dibuja_activacion_varc.py')
+    ejecutar_script('application/pregunta2/dibuja_activacion_vard.py')
 
 if __name__ == "__main__":
     main()
