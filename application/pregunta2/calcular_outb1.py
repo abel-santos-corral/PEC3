@@ -3,6 +3,10 @@
 # Imprimir feedback por pantalla:
 print("\033[34mEjecutando...\033[0m \033[33mCálculo de OutB1\033[0m")
 
+# Colores
+GREEN = "\033[92m"
+RESET = "\033[0m"
+
 # Valores de VarA
 varA = {
     'VL': 0.0,
@@ -69,7 +73,12 @@ for regla in reglas:
 
     varA_texto = f"{entradaA} ({valA:.4f})" if entradaA else "-"
     varB_texto = f"{entradaB} ({valB:.4f})" if entradaB else "-"
-    print(f"{num:<5} {varA_texto:<18} {varB_texto:<18} {salida} ({resultado:.4f})")
+    line =  f"{num:<5} {varA_texto:<18} {varB_texto:<18} {salida} ({resultado:.4f})"
+
+    if resultado > 0:
+        print(f"{GREEN}{line}{RESET}")
+    else:
+        print(line)
 
 # Imprimir feedback por pantalla:
 print("\033[34mFinalizado...\033[0m \033[33mCálculo de OutB1\033[0m")
