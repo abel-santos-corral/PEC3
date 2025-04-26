@@ -45,6 +45,7 @@ plt.plot(x, H, 'b', linewidth=2, label='H')
 plt.plot(x, VH, 'k', linewidth=2, label='VH')
 
 # Dibujar líneas horizontales de corte
+print(f"\033[34mActivaciones en VarA = {input_val}\033[0m")
 for label, value in activations.items():
     plt.hlines(value, 0, 2.0, linestyles='dashed', label=f'{label} corte', alpha=0.6)
 

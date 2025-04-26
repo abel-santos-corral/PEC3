@@ -35,6 +35,7 @@ activations = {
 activations = {k: v for k, v in activations.items() if v > 0}
 
 # Imprimir los valores de corte
+print(f"\033[34mActivaciones en VarB = {input_val}\033[0m")
 for label, value in activations.items():
     print(f"{label}: {value:.3f}")
 
