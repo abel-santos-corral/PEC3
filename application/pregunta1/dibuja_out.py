@@ -22,6 +22,9 @@ import numpy as np
 import matplotlib.pyplot as plt
 import skfuzzy as fuzz
 
+# Imprimir feedback por pantalla:
+print("\033[34mEjecutando...\033[0m \033[33mGráfico de Out\033[0m")
+
 # Definir rango
 x = np.linspace(0, 100, 1001)
 
@@ -73,3 +76,6 @@ output_dir = 'data/respuesta1'
 os.makedirs(output_dir, exist_ok=True)
 plt.savefig(os.path.join(output_dir, 'Out.png'))
 plt.show()
+
+# Imprimir feedback por pantalla:
+print("\033[34mFinalizado...\033[0m \033[33mGráfico de Out\033[0m")

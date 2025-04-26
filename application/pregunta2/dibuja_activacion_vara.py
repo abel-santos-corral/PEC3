@@ -3,6 +3,10 @@ import numpy as np
 import matplotlib.pyplot as plt
 import skfuzzy as fuzz
 
+# Imprimir feedback por pantalla:
+print("\033[34mEjecutando...\033[0m \033[33mCálculo de activacion de VarA\033[0m")
+
+
 # Definimos el rango de VarA
 x = np.linspace(0, 2.0, 101)
 
@@ -62,3 +66,6 @@ os.makedirs(output_dir, exist_ok=True)
 output_path = os.path.join(output_dir, 'VarA_activaciones.png')
 plt.savefig(output_path)
 plt.show()
+
+print("\033[34mFinalizado...\033[0m \033[33mCálculo de activacion de VarB\033[0m")
+

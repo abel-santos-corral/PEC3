@@ -31,6 +31,9 @@ import numpy as np
 import matplotlib.pyplot as plt
 import skfuzzy as fuzz
 
+# Imprimir feedback por pantalla:
+print("\033[34mEjecutando...\033[0m \033[33mGráfico de VarD\033[0m")
+
 # Definimos el rango de VarD e incluimos puntos clave
 x = np.unique(np.sort(np.concatenate([
     np.linspace(-1.0, 1.0, 102),
@@ -79,3 +82,6 @@ os.makedirs(output_dir, exist_ok=True)
 output_path = os.path.join(output_dir, 'VarD.png')
 plt.savefig(output_path)
 plt.show()
+
+# Imprimir feedback por pantalla:
+print("\033[34mFinalizado...\033[0m \033[33mGráfico de VarD\033[0m")
