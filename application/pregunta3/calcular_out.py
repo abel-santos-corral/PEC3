@@ -1,7 +1,5 @@
 # calcular_out.py
 
-import numpy as np
-
 # Imprimir feedback por pantalla:
 print("\033[34mEjecutando...\033[0m \033[33mCálculo de Out - Reglas OR + NOT\033[0m")
 
