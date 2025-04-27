@@ -4,7 +4,6 @@ import os
 import numpy as np
 import matplotlib.pyplot as plt
 import skfuzzy as fuzz
-import pickle
 
 # Imprimir feedback por pantalla:
 print("\033[34mEjecutando...\033[0m \033[33mDiagrama Out activado y valor nítido\033[0m")
