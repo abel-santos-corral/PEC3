@@ -55,5 +55,9 @@ def main():
     ejecutar_script('application/pregunta2/calcular_out.py')
     ejecutar_script('application/pregunta2/activacion_out.py')
 
+    # Ejecutar los scripts para pregunta 3
+    ejecutar_script('application/pregunta3/calcular_out.py')
+    ejecutar_script('application/pregunta3/activacion_out.py')
+
 if __name__ == "__main__":
     main()
