@@ -60,7 +60,7 @@ GREEN = "\033[92m"
 RESET = "\033[0m"
 
 # Imprimir cabeceras
-print(f"{'Regla':<5} {'OutB1':<15} {'VarC':<15} {'VarD':<15} {'Salida':<15}")
+print(f"{'Regla':<5} {'OutB1':<15} {'VarC':<15} {'VarD':<15} {'Out':<15}")
 print("-" * 65)
 
 # Procesar y mostrar cada regla
